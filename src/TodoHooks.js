@@ -38,7 +38,7 @@ return (
         <div className='containerone'>
              <header>
             <form>
-            <input className='inputfield' placeholder='Enter Text.......'   onChange={e=>handler(e)}  />
+            <input className='inputfield' placeholder='Enter Text.......,'   onChange={e=>handler(e)}  />
             <button className='onebut' onClick={addTexts} type='submit'>+</button>
             </form>
             </header> 
