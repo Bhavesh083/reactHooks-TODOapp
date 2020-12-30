@@ -1,0 +1,133 @@
+body{
+  background-color: rgb(16, 16, 56);
+}
+.containerone{
+  box-shadow: 10px 10px 10px 10px;
+  border : 4px solid black;
+ box-sizing:border-box;
+  position : absolute;
+  left:30%;
+  width:40%;
+  background-color:rgb(25, 27, 53);
+  top:5%;
+  height:90%;
+  overflow:hidden;
+  border-radius: 6px;
+}
+header{
+  overflow:hidden;
+  box-sizing:border-box;
+  position : absolute;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  height: 20%;
+}
+.inputfield{
+  border-radius: 7px;
+  height: 35%;
+  width:65%;
+  position : absolute;
+  left: 9%;
+  top:30%;
+  text-align:center;
+  color:black;
+  font-family: monospace;
+  outline: none;
+  font-size: 18px;
+  background-color: rgb(160, 130, 173);
+}
+
+.onebut{
+  outline: none;
+  background-color: rgb(174, 247, 6);
+  border-radius: 5px;
+  position: absolute ;
+  right: 6%;
+  top:35%;
+  border-style: none;
+  text-shadow:2px 2px 5px #000000;
+  height:30%;
+  width:auto;
+  padding: 9px 20px;
+}
+footer{
+  position:relative;
+  top:20%;
+  left: -5%;
+  height:auto;
+  width:100%;
+  overflow: auto;
+ box-sizing:border-box;
+}
+.listn{
+  list-style: none;
+}
+.complete{
+  background-color: rgb(39, 238, 82);
+  position: relative;
+  left: 22%;
+}
+.section{
+  background-color: rgb(148, 19, 109); 
+  border-radius: 3px;
+  width: 100%;
+  display: inline-flex;
+  margin-bottom:4%;
+  overflow :auto;
+}
+.ninput{
+  color: aliceblue; 
+  position: relative;
+  left: 22%;
+}
+.butt2{
+  background-color: rgb(15, 3, 3);
+  color: rgb(214, 18, 155);
+  position: absolute;
+  margin-top: 13px;
+  border: none;
+  left : 19%;
+  border-radius: 5px;
+  padding: 3px 10px 4px 10px;
+}
+.butt1{
+  background-color: rgb(6, 5, 17);
+  position: absolute;
+  left: 11%;
+  color: rgb(223, 27, 158);
+  margin-top: 13px;
+  border: none;
+  border-radius: 7px;
+  padding: 4px 8px 3px 8px;
+}
+@media only screen and (max-width:980px)
+{ 
+.containerone{
+  border : 4px solid black;
+ box-sizing:border-box;
+  position : absolute;
+  left:25%;
+  width:50%;
+  background-color:rgb(18, 20, 51);
+  top:5%;
+  height:90%;
+  overflow:hidden;
+  border-radius: 6px;
+}
+}
+@media only screen and (max-width:700px)
+{ 
+.containerone{
+  border : 4px solid black;
+ box-sizing:border-box;
+  position : absolute;
+  left:10%;
+  width:80%;
+  background-color:rgb(18, 20, 51);
+  top:5%;
+  height:90%;
+  overflow:hidden;
+  border-radius: 6px;
+}
+}
