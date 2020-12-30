@@ -1,5 +1,5 @@
 {
-  "homepage":"https://Bhavesh083.github.io/reactHooks-TODOapp",
+  "homepage": "https://Bhavesh083.github.io/reactHooks-TODOapp",
   "name": "todoHooks",
   "version": "0.1.0",
   "private": true,
@@ -8,6 +8,7 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.5.0",
     "axios": "^0.21.1",
+    "gh-pages": "^3.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-+   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
