@@ -1,6 +1,6 @@
 {
-  "name": "todoHooks",
   "homepage":"https://Bhavesh083.github.io/reactHooks-TODOapp",
+  "name": "todoHooks",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
