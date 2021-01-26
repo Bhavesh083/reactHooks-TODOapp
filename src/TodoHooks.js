@@ -35,22 +35,24 @@ const completedText = id =>{
 }
  
 return (
-        <div className='containerone'>
-             <header>
+    <div>
+        <div className='containero'>
             <form>
-            <input className='inputfield' placeholder='Enter Text.......,'   onChange={e=>handler(e)}  />
-            <button className='onebut' onClick={addTexts} type='submit'>+</button>
-            </form>
-            </header> 
-            <footer>
-          <ul> {textArr.map(t =>(
+            <input className='inputfield' placeholder='Enter....'   onChange={e=>handler(e)}  />
+            <button className='onebut' onClick={addTexts} type='submit'><i class="fas fa-plus"></i></button>
+            </form> 
+            <div className='ftr'>
+        <ul> {textArr.map(t =>(
                 <li className='listn' key={t.id}>
-                  <section className='section'> <p className={t.isComplete?'complete':'ninput'} >{t.text}</p>
-                    <button className='butt1' type='submit' onClick={e=>completedText(t.id)}>C</button>
-                    <button className='butt2' type='submit' onClick={e=>delText(t.id)}>-</button>
-                    </section> </li> 
+                  <section className='section'> 
+                    <p className={t.isComplete?'complete':'ninput'} >{t.text}</p>
+                    <button className='butt1' type='submit' onClick={e=>completedText(t.id)}><i class="fas fa-check"></i></button>
+                    <button className='butt2' type='submit' onClick={e=>delText(t.id)}><i class="fas fa-trash-alt"></i></button>
+                  </section> </li> 
              )) }
-            </ul></footer> 
+        </ul>
+            </div> 
+            </div>
         </div>
     )
 }
