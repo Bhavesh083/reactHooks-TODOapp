@@ -36,6 +36,7 @@ const completedText = id =>{
  
 return (
     <div>
+        <h3 className='navb'>TODO App</h3>
         <div className='containero'>
             <form>
             <input className='inputfield' placeholder='Enter....'   onChange={e=>handler(e)}  />
