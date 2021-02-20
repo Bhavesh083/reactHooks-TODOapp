@@ -1,40 +1,43 @@
 import React,{useState} from 'react'
 import App from './App.css'
+
+
+
 function TodoHooks() {
-const [textArr,setTextArr] = useState([]);
-const [texts,setTexts] = useState('');
-
-const handler = e =>{
-    setTexts(e.target.value)
-}
-
-const addTexts = (e) =>{
-    e.preventDefault();
-    if (texts!=='') { 
-        const  detail = {
-            id : Date.now(),
-            isComplete : false,
-            text : texts 
-        }
-      setTextArr([...textArr,detail])
-    }  
-} 
-const delText = id =>{
-    const newAry = [...textArr]
-    const filteredArr = newAry.filter(t => t.id!==id)
-    setTextArr(filteredArr)
-}
-const completedText = id =>{
-    const ind = textArr.findIndex(t => t.id===id) 
-    const newtextArr = [...textArr]
-    newtextArr[ind] = {
-        ...newtextArr[ind],
-        isComplete:true,
+    const [textArr,setTextArr] = useState([]);
+    const [texts,setTexts] = useState('');
+    
+    const handler = e =>{
+        setTexts(e.target.value)
     }
-    setTextArr([...newtextArr])
-}
+    
+    const addTexts = (e) =>{
+        e.preventDefault();
+        if (texts!=='') { 
+            const  detail = {
+                id : Date.now(),
+                isComplete : false,
+                text : texts 
+            }
+          setTextArr([...textArr,detail])
+        }  
+    } 
+    const delText = id =>{
+        const newAry = [...textArr]
+        const filteredArr = newAry.filter(t => t.id!==id)
+        setTextArr(filteredArr)
+    }
+    const completedText = id =>{
+        const ind = textArr.findIndex(t => t.id===id) 
+        const newtextArr = [...textArr]
+        newtextArr[ind] = {
+            ...newtextArr[ind],
+            isComplete:true,
+        }
+        setTextArr([...newtextArr])
+    }
  
-return (
+    return (
     <div>
         <h3 className='navb'>TODO App</h3>
         <div className='containero'>
@@ -54,7 +57,7 @@ return (
         </ul>
             </div> 
             </div>
-        </div>
+    </div>
     )
 }
 
